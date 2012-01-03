@@ -1,4 +1,4 @@
-RequireJS / Jasmine / r.js / almond skeleton for javascript libraries and modules.
+# RequireJS / Jasmine / r.js / almond skeleton for javascript libraries and modules.
 
 This skeleton is a starting point for developing modules and libraries for complex JS applications.
 Dependency management is handled by the [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader [RequireJS](https://github.com/jrburke/requirejs).  Unit testing is implemented
