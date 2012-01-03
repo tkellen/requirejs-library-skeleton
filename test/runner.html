@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>Test Runner</title>
+  <link rel="stylesheet" type="text/css" href="../vendor/jasmine-1.1.0/jasmine.css">
+  <script src="../vendor/jasmine-1.1.0/jasmine.js"></script>
+  <script src="../vendor/jasmine-1.1.0/jasmine-html.js"></script>
+
+  <!--
+    default path for modules beginning with 'app' before loading requireJS
+    all other requires will be called relative to the current path: /test/
+  -->
+  <script>var require = { paths: { app: '../lib/app' } }</script>
+  <script src="../vendor/require.js"></script>
+</head>
+<body>
+
+<script>
+  // require an array of tests to run
+  require(
+  [
+    'spec/app',
+    'spec/feature'
+  ],
+  function() {
+    jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+    jasmine.getEnv().execute();  
+  });
+</script>
+
+</body>
+</html>
+
