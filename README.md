@@ -13,6 +13,7 @@ node vendor/r.js -o build.js
 This generates a minified/optimized file under build/app.js.  When included in a page, the module's
 API is exposed by a single global variable (named in build.js).
 
-### Thanks
+## Thanks
 
-@jburke for the great tools RequireJS/r.js & almond.
+- @jburke for the fantastic tools RequireJS/r.js & almond.
+- @pivotal for the intuitive testing framework Jasmine.
