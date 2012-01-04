@@ -1,8 +1,8 @@
-// load the dependency required for this test and pass it into the variable app
-define(['app/feature'],function(app) {
+// load the entire module/library and pass to the test
+define(['app'],function(app) {
 
   // use jasmine to run tests against the required code
-  describe('Feature', function() {
+  describe('feature', function() {
 
     it('should be working', function() {
       expect(app.feature()).toBe('working');
