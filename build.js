@@ -21,4 +21,4 @@
 
   // build file destination, relative to the build file itself
   out: './build/app.js'
-});
+})
