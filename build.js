@@ -14,6 +14,7 @@
   include: ['app'],
 
   // code to wrap around the start / end of the resulting build file
+  // the global variable used to expose the API is defined here
   wrap: {
     start: '(function(){',
     end: 'window.app = require("app");}());'
