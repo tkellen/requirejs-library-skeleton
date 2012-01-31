@@ -12,5 +12,5 @@ API is exposed by a single global variable (named in build.js).
 
 ## Thanks
 
-- @jburke for the fantastic tools RequireJS/r.js & almond.
+- @jrburke for the fantastic tools RequireJS/r.js & almond.
 - @pivotal for the intuitive testing framework Jasmine.
