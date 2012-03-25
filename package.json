@@ -1,0 +1,32 @@
+{
+  "name": "module",
+  "description": "RequireJS / Jasmine / r.js / almond skeleton for javascript libraries and modules.",
+  "version": "0.0.1",
+  "author": "Tyler Kellen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tkellen/requirejs-library-skeleton.git"
+  },
+  "homepage": "http://github.com/tkellen/requirejs-library-skeleton",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/tkellen/requirejs-library-skeleton/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/skeleton",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "keywords": [
+    "library",
+    "boilerplate"
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "system": "*",
+    "requirejs": "*"
+  }
+}
