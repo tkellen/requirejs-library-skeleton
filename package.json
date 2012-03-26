@@ -25,6 +25,9 @@
   "dependencies": {
 
   },
+  "scripts": {
+    "test": "phantomjs test/runner-phantom.js http://localhost:8000/test/runner.html"
+  },
   "devDependencies": {
     "system": "*",
     "requirejs": "*"

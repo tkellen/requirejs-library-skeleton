@@ -37,7 +37,7 @@ function waitFor(testFx, onReady, timeOutMillis) {
 
 
 if (system.args.length !== 2) {
-    console.log('Usage: run-jasmine.js URL');
+    console.log('Usage: runner-phantom.js URL');
     phantom.exit();
 }
 

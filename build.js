@@ -17,11 +17,22 @@
   // code to wrap around the start / end of the resulting build file
   // the global variable used to expose the API is defined here
   wrap: {
-    start: "(function(global) {",
+    start: "(function(global, define) {"+
+              // check for amd loader on global namespace
+           "  var loader = false;"+
+           "  if(typeof global.define === 'function') {"+
+           "    loader=true;"+
+           "  }",
+
     end:   "  if(typeof module !== 'undefined' && module.exports) {"+
-           "     module.exports = requirejs('skeleton');"+ // for node
+                // export for node
+           "     module.exports = require('skeleton');"+
+           "  } else if(loader === true) {"+
+                // register library on global amd loader if present
+           "    global.define('skeleton',[],function(){return require('skeleton');});"+
            "  } else {"+
-           "    global['skeleton'] = requirejs('skeleton');"+ // for browsers w/o amd
+                // register on global namespace if no amd loader is present and script is inlined
+           "    global['skeleton'] = require('skeleton');"+
            "  }"+
            "}(this));"
   },
