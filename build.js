@@ -19,20 +19,20 @@
   wrap: {
     start: "(function(global, define) {"+
               // check for amd loader on global namespace
-           "  var loader = false;"+
-           "  if(typeof global.define === 'function') {"+
-           "    loader=true;"+
-           "  }",
+           "  var globalDefine = global.define;",
 
-    end:   "  if(typeof module !== 'undefined' && module.exports) {"+
-                // export for node
-           "     module.exports = require('skeleton');"+
-           "  } else if(loader === true) {"+
-                // register library on global amd loader if present
-           "    global.define('skeleton',[],function(){return require('skeleton');});"+
+    end:   "  var library = require('skeleton');"+
+           "  if(typeof module !== 'undefined' && module.exports) {"+
+                // export library for node
+           "    module.exports = library;"+
+           "  } else if(globalDefine) {"+
+                // define library for global amd loader that is already present
+           "    (function (define) {"+
+           "      define(function () { return library; });"+
+           "    }(globalDefine));"+
            "  } else {"+
-                // register on global namespace if no amd loader is present and script is inlined
-           "    global['skeleton'] = require('skeleton');"+
+                // define library on global namespace for inline script loading
+           "    global['skeleton'] = library;"+
            "  }"+
            "}(this));"
   },

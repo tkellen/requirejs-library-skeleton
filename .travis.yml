@@ -1,12 +1,11 @@
 language: node_js
 node_js:
-   - 0.4
-   - 0.6
-   - 0.7
+  - 0.4
+  - 0.6
+  - 0.7
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - "npm install servedir"
   - "servedir ./ &"
 after_script:
   - "kill $(ps aux | grep '[s]ervedir' | awk '{print $2}')"

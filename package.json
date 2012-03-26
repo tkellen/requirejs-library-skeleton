@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "system": "*",
-    "requirejs": "*"
+    "requirejs": "*",
+    "servedir": "*"
   }
 }
