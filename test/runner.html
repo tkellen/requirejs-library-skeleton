@@ -10,7 +10,7 @@
     default path for modules beginning with 'app' before loading requireJS
     all other requires will be called relative to the current path: /test/
   -->
-  <script>var require = { paths: { app: '../lib/app' } }</script>
+  <script>var require = { paths: { skeleton: '../lib/skeleton' } }</script>
   <script src="../vendor/require.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
   // require an array of tests to run
   require(
   [
-    'spec/app',
+    'spec/skeleton',
     'spec/module',
     'spec/feature'
   ],

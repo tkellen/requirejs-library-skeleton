@@ -7,7 +7,7 @@ var jasmine_console = require('../vendor/jasmine_console').jasmine_console;
 requirejs.config({
   nodeRequire: require,
   baseUrl: __dirname,
-  paths: { app: '../lib/app' }
+  paths: { skeleton: '../lib/skeleton' }
 });
 
 // make define available globally like it is in the browser
