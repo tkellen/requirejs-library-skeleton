@@ -9,7 +9,7 @@ node vendor/r.js -o build.js
 ```
 This generates a minified/optimized file under build/app.js.
 
-## Thanks
+## Thanks to
 
 - @jrburke for the fantastic tools RequireJS/r.js & almond.
 - @pivotal for the intuitive testing framework Jasmine.
