@@ -4,9 +4,8 @@ node_js:
   - 0.6
   - 0.7
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
   - "servedir ./ &"
+  - sleep 5
 after_script:
   - "kill $(ps aux | grep '[s]ervedir' | awk '{print $2}')"
 notifications:

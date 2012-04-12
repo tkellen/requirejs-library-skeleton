@@ -1,4 +1,5 @@
 # RequireJS / Jasmine / r.js / almond skeleton for javascript libraries and modules.
+[![Build Status](https://secure.travis-ci.org/tkellen/requirejs-library-skeleton.png)](http://travis-ci.org/[tkellen]/[requirejs-library-skeleton])
 
 This skeleton is a starting point for developing complex JS modules and libraries.  Dependency management is handled by the [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader [RequireJS](https://github.com/jrburke/requirejs).  Unit testing is implemented with the BDD framework [Jasmine](https://github.com/pivotal/jasmine).  Compilation is handled with [r.js](https://github.com/jrburke/r.js) and [almond](https://github.com/jrburke/almond)--the result is a single file with no external dependencies.
 
