@@ -5,6 +5,11 @@
   // e.g. require(['grid/core']) would grab /lib/grid/core.js
   baseUrl: './lib',
 
+  // specify custom module name paths
+  paths: {
+    cs: '../vendor/cs'
+  },
+
   // target amd loader shim as the main module, path is relative to baseUrl.
   name: '../vendor/almond',
 
@@ -36,6 +41,9 @@
            "  }"+
            "}(this));"
   },
+
+  // don't include coffeescript compiler in optimized file
+  stubModules: ['cs'],
 
   // build file destination, relative to the build file itself
   out: './build/skeleton.js'
