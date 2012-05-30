@@ -5,7 +5,7 @@ https://github.com/geddesign/amd-testing
 
 (function(){
 
-  var jasmine = require('./jasmine-1.1.0/jasmine').jasmine;
+  var jasmine = require('./jasmine-1.2.0/jasmine').jasmine;
 
   function red(s) { return ["\033[31m", s, "\033[0m"].join(''); }
   function green(s) { return ["\033[32m", s, "\033[0m"].join(''); }
