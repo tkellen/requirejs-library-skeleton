@@ -10,7 +10,15 @@
     default path for modules beginning with 'app' before loading requireJS
     all other requires will be called relative to the current path: /test/
   -->
-  <script>var require = { paths: { skeleton: '../lib/skeleton', cs: '../vendor/cs' } }</script>
+  <script>
+  var require = {
+    paths: {
+      "skeleton": "../lib/skeleton",
+      "cs": "../vendor/cs",
+      "coffee-script": "../vendor/coffee-script"
+    }
+  }
+  </script>
   <script src="../vendor/require.js"></script>
 </head>
 <body>
