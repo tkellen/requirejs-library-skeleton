@@ -1,29 +1,29 @@
 {
-  "name": "module",
-  "description": "RequireJS / Jasmine / r.js / almond skeleton for javascript libraries and modules.",
-  "version": "0.0.1",
-  "author": "Tyler Kellen",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/tkellen/requirejs-library-skeleton.git"
-  },
+  "name": "requirejs-library-skeleton",
+  "description": "RequireJS skeleton for modern JS libraries.",
+  "version": "0.1.0",
   "homepage": "http://github.com/tkellen/requirejs-library-skeleton",
+  "author": "Tyler Kellen",
   "licenses": [
     {
       "type": "MIT",
       "url": "http://github.com/tkellen/requirejs-library-skeleton/blob/master/LICENSE"
     }
   ],
-  "main": "lib/skeleton",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tkellen/requirejs-library-skeleton.git"
+  },
+  "main": "build/skeleton.js",
   "engines": {
-    "node": ">= 0.6.0"
+    "node": ">=0.4.2"
   },
   "keywords": [
+    "requirejs",
     "library",
     "boilerplate"
   ],
   "dependencies": {
-
   },
   "scripts": {
     "test": "phantomjs test/runner-phantom.js http://localhost:8000/test/runner.html"
