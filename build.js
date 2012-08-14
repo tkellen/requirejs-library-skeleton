@@ -1,6 +1,6 @@
 // see a complete list of options here:
 // https://github.com/jrburke/r.js/blob/master/build/example.build.js
-({
+requirejs.config({
   // all modules loaded are relative to this path
   // e.g. require(["grid/core"]) would grab /lib/grid/core.js
   baseUrl: "./lib",
@@ -48,5 +48,5 @@
   stubModules: ["cs","coffee-script"],
 
   // build file destination, relative to the build file itself
-  out: "./build/skeleton.js"
+  out: "./dist/skeleton.js"
 })

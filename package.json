@@ -1,7 +1,7 @@
 {
   "name": "requirejs-library-skeleton",
   "description": "RequireJS skeleton for modern JS libraries.",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "homepage": "http://github.com/tkellen/requirejs-library-skeleton",
   "author": "Tyler Kellen",
   "licenses": [
@@ -16,7 +16,7 @@
   },
   "main": "build/skeleton.js",
   "engines": {
-    "node": ">=0.4.2"
+    "node": ">=0.6.0"
   },
   "keywords": [
     "requirejs",
@@ -26,11 +26,11 @@
   "dependencies": {
   },
   "scripts": {
-    "test": "phantomjs test/runner-phantom.js http://localhost:8000/test/runner.html"
+    "test": "grunt test"
   },
   "devDependencies": {
-    "system": "*",
-    "requirejs": "*",
-    "servedir": "*"
+    "grunt": "~3.0.10",
+    "grunt-contrib": "*",
+    "grunt-jasmine-task": "*"
   }
 }

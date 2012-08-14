@@ -336,7 +336,7 @@ define("../vendor/almond", function(){});
 
 define('skeleton/core',[],function() {
   var skeleton = {
-    VERSION: '0.0.1'
+    VERSION: '0.1.5'
   };
 
   return skeleton;

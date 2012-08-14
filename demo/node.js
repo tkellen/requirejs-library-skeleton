@@ -1,3 +1,3 @@
-skeleton = require('../build/skeleton');
+var skeleton = require('../dist/skeleton');
 
 console.log("Look, skeletons's feature is: "+skeleton.feature());
