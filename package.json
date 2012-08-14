@@ -29,7 +29,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~3.0.10",
+    "grunt": "~0.3.11",
     "grunt-contrib": "*",
     "grunt-jasmine-task": "*"
   }
