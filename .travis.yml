@@ -4,11 +4,6 @@ node_js:
   - 0.6
   - 0.7
   - 0.8
-before_script:
-  - "servedir ./ &"
-  - sleep 5
-after_script:
-  - "kill $(ps aux | grep '[s]ervedir' | awk '{print $2}')"
 notifications:
   email:
     - tyler@sleekcode.net
