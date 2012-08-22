@@ -1,7 +1,7 @@
 {
   "name": "requirejs-library-skeleton",
   "description": "RequireJS skeleton for modern JS libraries.",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "homepage": "http://github.com/tkellen/requirejs-library-skeleton",
   "author": "Tyler Kellen",
   "licenses": [
@@ -14,14 +14,15 @@
     "type": "git",
     "url": "git://github.com/tkellen/requirejs-library-skeleton.git"
   },
-  "main": "build/skeleton.js",
   "engines": {
     "node": ">=0.6.0"
   },
   "keywords": [
     "requirejs",
     "library",
-    "boilerplate"
+    "boilerplate",
+    "skeleton",
+    "template"
   ],
   "dependencies": {
   },
@@ -33,6 +34,7 @@
     "grunt-contrib": "*",
     "grunt-jasmine-task": "*",
     "requirejs": "*",
-    "coffee-script": "*"
+    "coffee-script": "*",
+    "servedir": "*"
   }
 }

@@ -5,19 +5,32 @@ This template is a starting point for developing modern javascript modules and l
 
 Whichever method you use, the result is a single file with no external dependencies that runs in Node or the browser (with AMD, or as an inline script).
 
-## Building with RequireJS
 
+## Building / Testing with Node
+
+Kick off the requirejs optimizer by hand:
 ```console
 node vendor/r.js -o build.js
 ```
+
+If your project does not require a browser environment, run Jasmine tests with node.
+```console
+node test/runner-node
+```
+
+If your project does require a browser, start a webserver in the root directry.
+```console
+servedir
+```
+...and browse to [http://localhost:8000/test/runner.html](http://localhost:8000/test/runner.html)
+
 
 ## Building / Testing / Minifying with Grunt
 
 Start by installing grunt and a few required tasks:
 ```console
 npm install -g grunt
-npm install grunt-contrib
-npm install grunt-jasmine-task
+npm install
 ```
 
 Then, use grunt to run your tests in a headless browser ([PhantomJS](http://www.phantomjs.org/)), or kick off the RequireJS optimizer from any path inside the root of your project using these commands:
@@ -44,8 +57,6 @@ Note that the `phantomjs` executable needs to be in the system `PATH` for grunt 
 * [Where does $PATH get set in OS X 10.6 Snow Leopard?](http://superuser.com/questions/69130/where-does-path-get-set-in-os-x-10-6-snow-leopard)
 * [How do I change the PATH variable in Linux](https://www.google.com/search?q=How+do+I+change+the+PATH+variable+in+Linux)
 
-### Running tests and demos in a browser
-Start your preferred HTTP server (I use [servedir](https://github.com/remy/servedir)) in the root path of this repository and browse to the respective files.
 
 ## Thanks to
 
