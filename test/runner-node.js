@@ -1,7 +1,7 @@
 var fs = require('fs');
 var requirejs = require('requirejs');
-var jasmine = require('../vendor/jasmine-1.2.0/jasmine').jasmine;
-var jasmine_console = require('../vendor/jasmine_console').jasmine_console;
+var jasmine = require('../vendor/jasmine/jasmine').jasmine;
+var jasmine_console = require('../vendor/jasmine/jasmine_console').jasmine_console;
 
 // configure requirejs
 requirejs.config({
@@ -17,9 +17,9 @@ requirejs.config({
 global.define = require('requirejs');
 
 // make jasmine available globally like it is in the browser
-global.describe = require('../vendor/jasmine-1.2.0/jasmine').describe;
-global.it = require('../vendor/jasmine-1.2.0/jasmine').it;
-global.expect = require('../vendor/jasmine-1.2.0/jasmine').expect;
+global.describe = require('../vendor/jasmine/jasmine').describe;
+global.it = require('../vendor/jasmine/jasmine').it;
+global.expect = require('../vendor/jasmine/jasmine').expect;
 
 // load specs
 fs.readdirSync(__dirname+'/spec').map(function(spec) {

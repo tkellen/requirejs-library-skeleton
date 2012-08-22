@@ -31,6 +31,8 @@
   "devDependencies": {
     "grunt": "~0.3.11",
     "grunt-contrib": "*",
-    "grunt-jasmine-task": "*"
+    "grunt-jasmine-task": "*",
+    "requirejs": "*",
+    "coffee-script": "*"
   }
 }
