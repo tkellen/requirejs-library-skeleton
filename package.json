@@ -30,10 +30,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.3.11",
-    "grunt-contrib": "*",
+    "grunt": "~0.3.16",
+    "grunt-contrib-requirejs": "~0.3.2",
     "grunt-jasmine-task": "*",
-    "requirejs": "*",
+    "requirejs": "~2.1.0",
     "coffee-script": "*",
     "servedir": "*"
   }

@@ -26,7 +26,7 @@ module.exports = function(grunt) {
   });
 
   // Load external tasks
-  grunt.loadNpmTasks('grunt-contrib');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-jasmine-task');
 
   // Make task shortcuts

@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-<head>
+<head lang="en">
+  <meta charset="utf-8"/>
   <title>Test Runner</title>
   <link rel="stylesheet" type="text/css" href="../vendor/jasmine/jasmine.css">
   <script src="../vendor/jasmine/jasmine.js"></script>
@@ -27,7 +28,7 @@
     'spec/cs'
   ],
   function() {
-    jasmine.getEnv().addReporter(new jasmine.HtmlReporter());    
+    jasmine.getEnv().addReporter(new jasmine.HtmlReporter());
     jasmine.getEnv().execute();
   });
 </script>
